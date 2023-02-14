@@ -1,0 +1,367 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+body {
+    background: rgb(252, 252, 252);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.carousel {
+    top: 44px;
+}
+
+.carousel .carousel-inner .carousel-item.active .carousel-caption {
+    top: 38%;
+    right: 50%;
+    left: 5%;
+}
+
+@media (max-width: 1025px) {
+
+    .carousel .carousel-inner .carousel-item.active .carousel-caption {
+        top: 28%;
+    }
+    
+}
+
+.carousel .carousel-inner .carousel-item.active .carousel-caption h5{
+    font-size: 2.5rem;    
+    font-weight: 700;
+}
+
+@media (max-width: 810px) {
+
+    .carousel .carousel-inner .carousel-item.active .carousel-caption h5{
+        font-size: 2.2rem;    
+    }
+    
+}
+
+.carousel-title {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .carousel-title {
+        position: relative;
+        display: block;
+        top: 44px;
+        font-size: 1.5rem;
+        line-height: 2.2;
+        font-weight: 700;
+        color: rgb(35, 35, 35);
+        text-align: center;
+        margin: 3% 0;
+    }
+    
+}
+
+.support-container {
+    position: relative;
+    top: 44px;
+}
+
+.support-container .support-row .support.col-8 {
+    text-align: center;
+    margin: 1% 0;
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .support.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.support-container .support-row .support.col-8 .common-problem {
+    display: flex;
+    margin: 5% auto;
+}
+
+.support-container .support-row .support.col-8 .common-problem a {
+    background: rgb(240, 240, 240);
+    margin: 0 1%;
+    box-shadow: 0 1px 5px rgb(200, 200, 200);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.support-container .support-row .support.col-8 .common-problem a:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
+
+.support-container .support-row .support.col-8 .common-problem a p {
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #FF9938;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.support-container .support-row .support.col-8 .common-problem .forgot.col .link-text {
+    background: url('../images/.svg/tools/card-text_black.svg');
+}
+
+.support-container .support-row .support.col-8 .common-problem .forgot.col .link-pen {
+    background: url('../images/.svg/tools/pencil-sharp_grey.svg');
+}
+
+.support-container .support-row .support.col-8 .common-problem .goods-problem.col .link-question {
+    background: url('../images/.svg/tools/question-circle_black.svg');
+}
+
+.support-container .support-row .support.col-8 .common-problem .bill-and-subscriptions .link-receipt {
+    background: url('../images/.svg/tools/receipt_black.svg');
+}
+
+.support-container .support-row .support.col-8 .common-problem .forgot.col .link-text, 
+.support-container .support-row .support.col-8 .common-problem .goods-problem.col .link-question, 
+.support-container .support-row .support.col-8 .common-problem .bill-and-subscriptions .link-receipt {
+    vertical-align: middle;
+    display: inline-block;
+    background-position: center;
+    background-size: 3rem;
+    height: 5rem;
+    width: 5rem;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.support-container .support-row .support.col-8 .common-problem .forgot.col .link-pen {
+    position: absolute;
+    vertical-align: middle;
+    display: inline-block;
+    background-position: center;
+    background-size: 1.6rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    top: 6%;
+    left: 52%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.support-container .support-row .support.col-8 .search-bar-container {
+    margin: 5% auto;
+}
+
+.support-container .support-row .support.col-8 .search-bar-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgb(35, 35, 35);
+    margin: 3% auto;
+}
+
+.support-container .support-row .support.col-8 .search-bar-container .search-bar .input-field {
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    height: 3.125rem;
+    display: flex;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 0 0 3px rgb(200, 200, 200);
+}
+
+.support-container .support-row .support.col-8 .search-bar-container .search-bar .input-field .link-search {
+    background: url('../images/.svg/tools/search-icon_black.svg');
+    display: block;
+    background-position: center;
+    background-size: 1.25rem;
+    border-radius: 50%;
+    height: 2.375rem;
+    width: 2.375rem;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: auto 0.5rem;
+}
+
+.support-container .support-row .support.col-8 .search-bar-container .search-bar .input-field input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 3.125;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(35, 35, 35);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.support-container .support-row .get-support.col-12 {
+    background: rgb(235, 235, 235, 0.85);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .get-support.col-12 {
+        display: block;
+        padding: 1% 1% 3% 1%;
+    }
+    
+}
+
+.support-container .support-row .get-support.col-12 .get-support-container {
+    width: 71%;
+    margin: 3% 0.5% 3% 0;
+    background: rgb(252, 252, 252);
+    border-radius: 0 1rem 1rem 0;
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .get-support.col-12 .get-support-container {
+        width: 100%;
+        margin: 2% 0 0 0;
+        background: rgb(252, 252, 252);
+        padding: 1% 0 0 0;
+        border-radius: 1rem;
+    }
+
+}
+
+.support-container .support-row .get-support.col-12 .get-support-container h2 {
+    margin: 2% auto 1% auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .get-support.col-12 .get-support-container h2 {
+        margin: 2% auto 1% auto;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        font-weight: 700;
+        color: rgb(35, 35, 35);
+    }
+
+}
+
+.support-container .support-row .get-support.col-12 .get-support-container p {
+    margin: 1% auto 4% auto;
+    font-size: 0.8rem;
+    padding: 0 1%;
+    color: rgb(35, 35, 35);
+}
+
+.support-container .support-row .get-support.col-12 .get-support-container a {
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+    background: rgb(35, 35, 35);
+    border-radius: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.support-container .support-row .get-support.col-12 .get-support-container img {
+    max-width: 100%;
+}
+
+.support-container .support-row .get-support.col-12 .support-app-container {
+    width: 29%;
+    margin: 3% 0 3% 0.5%;
+    background: rgb(252, 252, 252);
+    border-radius: 1rem 0 0 1rem;
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .get-support.col-12 .support-app-container {
+        width: 100%;
+        margin: 3% 0 0 0;
+        background: rgb(252, 252, 252);
+        border-radius: 1rem;
+        padding: 1% 0 0 0;
+    }
+
+}
+
+.support-container .support-row .get-support.col-12 .support-app-container h2 {    
+    margin: 3% auto 2% auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+
+.support-container .support-row .get-support.col-12 .support-app-container p {
+    margin: 1% auto 3% auto;
+    font-size: 0.8rem;
+    padding: 0 1%;
+    color: rgb(35, 35, 35);
+}
+
+.support-container .support-row .get-support.col-12 .support-app-container a {
+    padding: 0 40%;
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    color: #FF9938;
+    cursor: pointer;    
+}
+
+.support-container .support-row .get-support.col-12 .support-app-container img {
+    margin: 1.5% 0 0 0;
+    max-width: 55%;
+}
+
+@media (max-width:1025px) {
+
+    .support-container .support-row .get-support.col-12 .support-app-container h2 {    
+        margin: 2% auto;
+    }
+
+    .support-container .support-row .get-support.col-12 .support-app-container p {
+        margin: 1% auto 1% auto;
+    }
+
+    .support-container .support-row .get-support.col-12 .support-app-container img {
+        margin: 1.5% 0 0 0;
+        max-width: 20%;
+    }
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.support-container .support-row .support.col-8 .service-programs {
+    text-align: left;
+    margin: 2% 0;
+}
+
+.support-container .support-row .support.col-8 .service-programs h2 {
+    margin: 2% auto 1% auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+
+.support-container .support-row .support.col-8 .service-programs li {
+    list-style: none;
+}
+
+.support-container .support-row .support.col-8 .service-programs li a {
+    display: block;
+    text-decoration: none;
+    margin: 0 0 0 2%;
+    color: #FF9938;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+.support-container .support-row .support.col-8 .service-programs li a:hover {
+    margin: 0 0 0 3%;
+    transition: all 0.2s ease;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

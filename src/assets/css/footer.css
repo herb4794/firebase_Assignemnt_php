@@ -1,0 +1,303 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.footer-container {
+    position: relative;
+    top: 44px;
+    width: 100%;
+    padding: 1rem 0;
+    background: rgb(235, 235, 235, 0.85);
+}
+
+@media (max-width: 767px) {
+
+    .footer-container {
+        margin: 4% auto 0 auto;
+    }
+
+}
+
+.footer-container .footer-row {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* CSS of Recommendation Box col for Index */
+.footer-container .footer-row .footer-tablet.col-8,
+.footer-container .footer-row .footer-tablet.col-8 {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.footer-container .footer-row .footer-mobile.col-8 {
+    display: none;
+}
+
+@media (max-width:1025px) {
+
+    .footer-container .footer-row .footer-tablet.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:767px) {
+
+    .footer-container .footer-row .footer-tablet.col-8 {
+        display: none;
+    }
+
+
+    .footer-container .footer-row .footer-mobile.col-8 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+
+    .footer-container .footer-row .footer-mobile.col-8 {
+        display: block;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* CSS of Recommendation Box title for Index */
+
+.footer-container .footer-row .footer-tablet.col-8 .cooperation-opportunities h4,
+.footer-container .footer-row .footer-tablet.col-8 .payment-products h4,
+.footer-container .footer-row .footer-tablet.col-8 .support h4,
+.footer-container .footer-row .footer-tablet.col-8 .about-us h4,
+.footer-container .footer-row .footer-tablet.col-8 .get-our-app h4,
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment h4,
+.footer-container .footer-row .footer-mobile.col-8 .cooperation-opportunities h4,
+.footer-container .footer-row .footer-mobile.col-8 .payment-products h4,
+.footer-container .footer-row .footer-mobile.col-8 .support h4,
+.footer-container .footer-row .footer-mobile.col-8 .about-us h4,
+.footer-container .footer-row .footer-mobile.col-8 .get-our-app h4,
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(35, 35, 35);
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .cooperation-opportunities ul,
+.footer-container .footer-row .footer-tablet.col-8 .payment-products ul,
+.footer-container .footer-row .footer-tablet.col-8 .support ul,
+.footer-container .footer-row .footer-tablet.col-8 .about-us ul,
+.footer-container .footer-row .footer-tablet.col-8 .get-our-app ul,
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment ul,
+.footer-container .footer-row .footer-mobile.col-8 .cooperation-opportunities ul,
+.footer-container .footer-row .footer-mobile.col-8 .payment-products ul,
+.footer-container .footer-row .footer-mobile.col-8 .support ul,
+.footer-container .footer-row .footer-mobile.col-8 .about-us ul,
+.footer-container .footer-row .footer-mobile.col-8 .get-our-app ul,
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment ul {
+    list-style: none;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .cooperation-opportunities ul li a,
+.footer-container .footer-row .footer-tablet.col-8 .payment-products ul li a,
+.footer-container .footer-row .footer-tablet.col-8 .support ul li a,
+.footer-container .footer-row .footer-tablet.col-8 .about-us ul li a,
+.footer-container .footer-row .footer-tablet.col-8 .get-our-app p,
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment ul li a,
+.footer-container .footer-row .footer-mobile.col-8 .cooperation-opportunities ul li a,
+.footer-container .footer-row .footer-mobile.col-8 .payment-products ul li a,
+.footer-container .footer-row .footer-mobile.col-8 .support ul li a,
+.footer-container .footer-row .footer-mobile.col-8 .about-us ul li a,
+.footer-container .footer-row .footer-mobile.col-8 .get-our-app p,
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment ul li a {
+    font-size: 0.5rem;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    transition: all 0.4s ease;
+    text-decoration: none;
+    margin: 0 0 1rem 0.5rem;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .cooperation-opportunities ul li a:hover,
+.footer-container .footer-row .footer-tablet.col-8 .payment-products ul li a:hover,
+.footer-container .footer-row .footer-tablet.col-8 .support ul li a:hover,
+.footer-container .footer-row .footer-tablet.col-8 .about-us ul li a:hover,
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment ul li a:hover,
+.footer-container .footer-row .footer-mobile.col-8 .cooperation-opportunities ul li a:hover,
+.footer-container .footer-row .footer-mobile.col-8 .payment-products ul li a:hover,
+.footer-container .footer-row .footer-mobile.col-8 .support ul li a:hover,
+.footer-container .footer-row .footer-mobile.col-8 .about-us ul li a:hover,
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment ul li a:hover {
+    margin: 0 0 0 1rem;
+    color: #FF9938;
+    transition: all 0.4s ease;
+}
+
+@media (max-width:480px) {
+
+    .footer-container .footer-row .footer-mobile.col-8 .cooperation-opportunities,
+    .footer-container .footer-row .footer-mobile.col-8 .payment-products,
+    .footer-container .footer-row .footer-mobile.col-8 .support,
+    .footer-container .footer-row .footer-mobile.col-8 .about-us,
+    .footer-container .footer-row .footer-mobile.col-8 .get-our-app,
+    .footer-container .footer-row .footer-mobile.col-8 .supported-payment {
+        margin: 1rem auto;
+    }
+
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .get-our-app .app-img, 
+.footer-container .footer-row .footer-mobile.col-8 .get-our-app .app-img {
+    text-align: center;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .get-our-app .app-img img, 
+.footer-container .footer-row .footer-mobile.col-8 .get-our-app .app-img img {
+    width: auto;
+    height: 100%;
+    max-height: 2.8rem;
+    margin: 0.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment .payment-img, 
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment .payment-img {
+    text-align: center;
+}
+
+.footer-container .footer-row .footer-tablet.col-8 .supported-payment .payment-img img, 
+.footer-container .footer-row .footer-mobile.col-8 .supported-payment .payment-img img {
+    width: auto;
+    height: 1.5rem;
+    margin: 0.3rem;
+    cursor: pointer;
+}
+
+.footer-container .under-footer-container {
+    width: 100%;
+    margin: 1rem 0 0 0;
+}
+
+
+.footer-container .under-footer-container .under-footer-row {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-top: 1.3px solid rgb(190, 190, 190, 0.95);
+    padding: 1rem 1rem;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 {
+    display: none;
+}
+
+@media (max-width:1025px) {
+
+    .footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+
+    .footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 {
+        display: none;
+    }
+
+    .footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 {
+        display: block;
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Under Footer of Tablet Version */
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .copyright-text,
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion {
+    width: 100%;
+    color: rgb(75, 75, 75);
+    height: 0.5rem;
+    line-height: 1;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .copyright-text {
+    font-size: 0.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion {
+    font-size: 0.4rem;
+    text-align: right;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion a:hover {
+    color: #FF9938;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion a:nth-child(1) {
+    padding: 0.25rem 0.5rem 0.25rem 0;
+    border-right: 1px solid rgb(190, 190, 190, 0.95);
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-tablet.col-8 .language-conversion a:nth-child(2) {
+    padding: 0.25rem 0 0.25rem 0.5rem;
+}
+
+/* Under Footer of Mobile Version */
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .copyright-text,
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .language-conversion {
+    width: 100%;
+    color: rgb(75, 75, 75);
+    height: 1rem;
+    margin: 1rem 0 0 0;
+    line-height: 1;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .copyright-text {
+    font-size: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .language-conversion {
+    position: relative;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .language-conversion a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+.footer-container .under-footer-container .under-footer-row .under-mobile-tablet.col-8 .language-conversion a:hover {
+    color: #FF9938;
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .language-conversion a:nth-child(1) {
+    padding: 0.25rem 0.5rem 0.25rem 0;
+    border-right: 1px solid rgb(190, 190, 190, 0.95);
+}
+
+.footer-container .under-footer-container .under-footer-row .under-footer-mobile.col-8 .language-conversion a:nth-child(2) {
+    padding: 0.25rem 0 0.25rem 0.5rem;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

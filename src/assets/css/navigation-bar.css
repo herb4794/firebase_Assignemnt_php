@@ -1,0 +1,922 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Start of Header Menu */
+/* Image of Company Logo */
+header nav .desktop-nav li a img,
+header nav .mobile-nav li a img {
+  width: auto;
+  height: 0.75rem;
+  vertical-align: middle;
+}
+
+/* Image of Search Icon */
+header .link-search {
+  background: url('../images/.svg/tools/search-icon_white.svg');
+  display: block;
+  background-position: center;
+  background-size: 1rem;
+  height: 2.75rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+}
+
+/* Image of Shopping Bag */
+header .link-bag {
+  background: url('../images/.svg/tools/bag-icon_white.svg');
+  display: block;
+  background-position: center;
+  background-size: 1rem;
+  height: 2.75rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+}
+
+/* Image of User Icon */
+header .link-user {
+  background: url('../images/.svg/tools/person-circle_white.svg');
+  display: block;
+  background-position: center;
+  background-size: 1rem;
+  height: 2.75rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+}
+
+/* Image of Close Icon */
+header .link-close {
+  background: url('../images/.svg/tools/close-icon_white.svg');
+  display: block;
+  background-position: center;
+  background-size: 0.875rem;
+  height: 2.75rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+}
+
+/* Desktop Nav */
+header .nav-container {
+  background: rgb(0, 0, 0, 0.85);
+  height: 2.75rem;
+  z-index: 300;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header .nav-container nav {
+  height: 100%;
+  width: 62.5rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+header nav .desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+header nav .desktop-nav li a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 0.75rem;
+  opacity: 0.85;
+  transition: opacity 400ms;
+}
+
+header nav .desktop-nav li a:hover {
+  opacity: 1;
+}
+
+/* Desktop Nav Animation */
+header .desktop-nav li {
+  transition: all 400ms ease;
+}
+
+header .desktop-nav.hide li {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+/* Navigation Menu Items Transition Delay */
+header .desktop-nav li:nth-of-type(1),
+header .desktop-nav.hide li:nth-of-type(6) {
+  transition-delay: 0ms;
+}
+
+header .desktop-nav li:nth-of-type(2),
+header .desktop-nav.hide li:nth-of-type(5) {
+  transition-delay: 30ms;
+}
+
+header .desktop-nav li:nth-of-type(3),
+header .desktop-nav.hide li:nth-of-type(4) {
+  transition-delay: 60ms;
+}
+
+header .desktop-nav li:nth-of-type(4),
+header .desktop-nav.hide li:nth-of-type(3) {
+  transition-delay: 90ms;
+}
+
+header .desktop-nav li:nth-of-type(5),
+header .desktop-nav.hide li:nth-of-type(2) {
+  transition-delay: 120ms;
+}
+
+header .desktop-nav li:nth-of-type(6),
+header .desktop-nav.hide li:nth-of-type(1) {
+  transition-delay: 150ms;
+}
+
+/* Shopping-Bag Container */
+header .shopping-bag-view.hide {
+  display: none;
+}
+
+header .shopping-bag-view {
+  display: block; 
+  background: rgb(252, 252, 252);
+  width: 18rem;
+  border: 0.125rem solid rgb(245, 245, 245);
+  border-radius: 1rem;
+  right: 20%;
+  position: fixed;
+  top: 3rem;
+  padding: 0.625rem 1.25rem;
+  z-index: 110;
+}
+
+header .shopping-bag-view .shopping-bag-container { 
+  position: relative;
+}
+
+/* Controls the distance between the bagview and the right border */
+@media (max-width: 1670px) {
+  header .shopping-bag-view {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1600px) {
+  header .shopping-bag-view {
+    right: 13%;
+  }
+}
+
+@media (max-width: 1550px) {
+  header .shopping-bag-view {
+    right: 12%;
+  }
+}
+
+@media (max-width: 1500px) {
+  header .shopping-bag-view {
+    right: 11%;
+  }
+}
+
+@media (max-width: 1450px) {
+  header .shopping-bag-view {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1400px) {
+  header .shopping-bag-view {
+    right: 9%;
+  }
+}
+
+@media (max-width: 1350px) {
+  header .shopping-bag-view {
+    right: 8%;
+  }
+}
+
+@media (max-width: 1300px) {
+  header .shopping-bag-view {
+    right: 7%;
+  }
+}
+
+@media (max-width: 1250px) {
+  header .shopping-bag-view {
+    right: 6%;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+header .nav-container nav .mobile-nav li .link-bag p {
+  position: absolute;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: red;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(252, 252, 252);
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 1.4375rem 0 0 1.75rem;
+  cursor: pointer;
+}
+
+header .nav-container nav .desktop-nav li .link-bag p {
+  position: absolute;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: red;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(252, 252, 252);
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 1.25rem 0 0 0.8rem;
+  cursor: pointer;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Controls the distance between the bagview and the right border */
+
+/* Set the option image in the shopping bag */
+header .shopping-bag-container .bag-icon {
+  background: url('../images/.svg/tools/bag-icon_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+header .shopping-bag-container .book-mark-icon {
+  background: url('../images/.svg/tools/bookmark_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+header .shopping-bag-container .packet-icon {
+  background: url('../images/.svg/tools/box-seam_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+header .shopping-bag-container .logout_icon {
+  background: url('../images/.svg/tools/box-arrow-left.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+
+
+/* Set the option image in the shopping bag */
+
+/* Set option text in shopping bag */
+header .shopping-bag-container h2 {
+  color: rgb(160, 160, 160);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.625rem;
+  padding: 1.5625rem 1.25rem;
+}
+
+header .shopping-bag-container ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  border-top: 1px solid rgb(200, 200, 200);
+  padding: 0.625rem 0;
+  margin: 0 auto;
+  margin-left: -0.1875rem;
+}
+
+header .shopping-bag-container ul li a {
+  font-size: 0.75rem;
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+  width: 100%;
+  margin-left: 1.5625rem;
+}
+
+/* Set option text in shopping bag */
+
+
+/* Mobile Shopping-Bag Container */
+header .mobile-shopping-bag-view.hide {
+  display: none;
+}
+
+header .mobile-shopping-bag-view {
+  background: rgb(252, 252, 252);
+  border: 0.125rem solid rgb(245, 245, 245);
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  display: block;
+  z-index: 110;
+  top: 2.75rem;
+  padding: 0 2.5rem;
+}
+
+header .mobile-shopping-bag-container {
+  position: relative;
+}
+
+/* Set the option image in the shopping bag */
+header .mobile-shopping-bag-container .bag-icon {
+  background: url('../images/.svg/tools/bag-icon_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+header .mobile-shopping-bag-container .book-mark-icon {
+  background: url('../images/.svg/tools/bookmark_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+header .mobile-shopping-bag-container .packet-icon {
+  background: url('../images/.svg/tools/box-seam_black.svg');
+  vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-size: 0.9375rem;
+  height: 0.9375rem;
+  width: 1.25rem;
+  background-repeat: no-repeat;
+  margin-top: -0.125rem;
+  margin-right: 0.9375rem;
+  margin-left: -0.9375rem;
+  opacity: 0.65;
+}
+
+/* Set the option image in the shopping bag */
+
+/* Set option text in shopping bag */
+header .mobile-shopping-bag-container h2 {
+  color: rgb(160, 160, 160);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.625rem;
+  margin-left: 2.8125rem;
+  padding: 1.5625rem 1.25rem;
+}
+
+header .mobile-shopping-bag-container ul li {
+  width: 100%;
+  list-style: none;
+  border-top: 1px solid rgb(200, 200, 200);
+  padding: 0.9375rem 1.5625rem;
+}
+
+header .mobile-shopping-bag-container ul li a {
+  font-size: 0.75rem;
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+  width: 100%;
+}
+/* Set option text in shopping bag */
+/* Mobile Shopping-Bag Container */
+
+/* Shopping-Bag Container */
+
+/* Search Container */
+header .search-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 40.125rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+header .search-container.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+header .search-container .link-search {
+  position: absolute;
+  left: 1%;
+  opacity: 0.6;
+}
+
+header .search-container .link-close {
+  position: absolute;
+  top: 0;
+  right: 1.25rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+header .search-container .link-close:hover {
+  opacity: 0.9;
+}
+
+header .search-container form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .search-container form input {
+  width: 100%;
+  height: 2.75rem;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: rgb(200, 200, 200);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+}
+
+header .search-container form input::placeholder {
+  color: rgb(160, 160, 160);
+}
+
+/* Search Container Animation */
+/* No Hide Class */
+header .search-container form,
+header .search-container .recent-search {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 300ms;
+}
+
+header .search-container .link-search {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transform: scale(0.8);
+  transition-delay: 300ms;
+}
+
+header .search-container .link-close {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transform: scale(0.8);
+  transition-delay: 200ms;
+}
+
+header .search-container .recent-search h2 {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 320ms;
+}
+
+header .search-container .recent-search ul li:nth-of-type(1) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 340ms;
+}
+
+header .search-container .recent-search ul li:nth-of-type(2) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 360ms;
+}
+
+header .search-container .recent-search ul li:nth-of-type(3) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 380ms;
+}
+
+header .search-container .recent-search ul li:nth-of-type(4) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 400ms;
+}
+
+header .search-container .recent-search ul li:nth-of-type(5) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 420ms;
+}
+
+/* Hide Class */
+header .search-container.hide form,
+header .search-container.hide .recent-search {
+  opacity: 0;
+  transform: translateX(3.125rem);
+}
+
+header .search-container.hide .link-search {
+  opacity: 0;
+  transform: translateX(3.125rem);
+  transition: all 400ms ease;
+}
+
+header .search-container.hide .link-close {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 200ms ease;
+}
+
+header .search-container.hide .recent-search h2 {
+  opacity: 0;
+  transform: translateX(3.125rem);
+  transition: all 400ms ease;
+}
+
+.search-container.hide .recent-search ul li {
+  opacity: 0;
+  transform: translateX(3.125rem);
+  transition: all 400ms ease;
+}
+
+/* Search Container Overlay */
+header .search-container-overlay.show {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* Search Container Overlay Animation */
+header .search-container-overlay {
+  transition: all 400ms ease;
+}
+
+/* Recent Search */
+header .search-container .recent-search {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 1rem 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+header .search-container .recent-search h2 {
+  font-size: 0.75rem;
+  color: #6e6e73;
+  margin: 0 1.25rem;
+}
+
+header .search-container .recent-search ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+header .search-container .recent-search ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 3.125rem;
+  font-size: 0.75rem;
+  color: rgb(5, 5, 5, 0.8);
+  text-decoration: none;
+}
+
+header .search-container .recent-search ul li a:hover {
+  color: #ff8800;
+  background: rgb(245, 245, 245)
+}
+
+/* Mobile Nav */
+.mobile-login,
+.mobile-nav,
+.mobile-search-container {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width:1200px) {
+  header .nav-container nav {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* iPad Pro to iPad */
+@media (max-width:1625px) {
+
+  header nav {
+    padding: 0;
+  }
+
+  header .nav-container {
+    background: transparent;
+  }
+
+  header .nav-container .desktop-nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.75rem;
+    background: rgb(0, 0, 0, 0.85);
+    justify-content: start;
+    overflow: hidden;
+    z-index: -1;
+    transition: all 500ms ease;
+  }
+
+  header .nav-container.active .desktop-nav {
+    height: 100vh;
+  }
+
+  header .nav-container .desktop-nav li {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  header .nav-container .desktop-nav li:first-child {
+    margin-top: 7.25rem;
+  }
+
+  header .nav-container .desktop-nav .desktop-logo,
+  header .nav-container .desktop-nav li a img,
+  header .nav-container .desktop-nav .link-search,
+  header .nav-container .desktop-nav .link-bag,
+  header .nav-container .desktop-nav .fa-cart-shopping,
+  header .nav-container .desktop-nav .desktop-login {
+    display: none;
+  }
+
+  header .nav-container .desktop-nav li a {
+    text-align: right;
+    padding: 1rem 0.9375rem;
+    display: inline-block;
+    width: 100%;
+    font-size: 0.75rem;
+  }
+  
+  /* Mobile Nav */
+  header nav .mobile-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  header nav .desktop-nav .mobile-login {
+    display: flex;
+  }
+
+  header nav .link-bag {
+    opacity: 0.75;
+    width: 3rem;
+    height: 3rem;
+    background-size: 1.25rem;
+  }
+
+
+  header nav .mobile-nav li a img {
+    width: auto;
+    height: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  header nav .menu-icon-container {
+    width: 1.4375rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  header nav .menu-icon {
+    position: relative;
+    width: 100%;
+  }
+
+  header nav .desktop-nav .mobile-login .link-user {
+    vertical-align: middle;
+    display: inline-block;
+    background-position: center;
+    background-size: 1rem;
+    height: 1.125rem;
+    width: 1.25rem;
+    background-repeat: no-repeat;
+    margin-top: -0.1875rem;
+    margin-right: 0.625rem;
+  }
+
+  header nav .menu-icon .line-top,
+  header nav .menu-icon .line-bottom {
+    position: absolute;
+    right: 0.625rem;
+    height: 1px;
+    width: 83%;
+    transition: 0.3s;
+    background: rgb(255, 255, 255, 0.75);
+  }
+
+  header nav .menu-icon .line-top {
+    top: 0px;
+  }
+
+  header nav .menu-icon .line-bottom {
+    top: 0.3125rem;
+  }
+
+  header .nav-container.active nav .menu-icon-container .menu-icon .line-top {
+    top: 0.3125rem;
+    transform: rotateZ(45deg);
+  }
+
+  header .nav-container.active nav .menu-icon-container .menu-icon .line-bottom {
+    top: 0.3125rem;
+    transform: rotateZ(-45deg);
+  }
+
+  /* Bag Icon Animation */
+  header .nav-container .mobile-nav .link-bag {
+    transform: translateY(0);
+    transition: all 400ms ease;
+    margin-top: -0.125rem;
+    background-size: 1.125rem;
+  }
+
+  header .nav-container.active .mobile-nav .link-bag {
+    transform: translateY(-1.25rem);
+    transition: all 400ms ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Search Box of Mobile */
+  header .mobile-search-container input {
+    width: 100%;
+    padding: 0.5rem 2.8125rem;
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+    background: rgb(75, 75, 75);
+    border: 0;
+    color: rgb(200, 200, 200);
+    border-radius: 1.25rem;
+    outline: none;
+  }
+
+  header .mobile-search-container input::placeholder {
+    color: rgb(200, 200, 200);
+  }
+
+  header .mobile-search-container {
+    position: relative;
+    padding: 0 1rem;
+    margin-top: 1.25rem;
+    border-bottom: 1px solid rgb(75, 75, 75, 0.9);
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: center;
+    transform: rotateX(90deg);
+  }
+
+  header .nav-container.active .mobile-search-container {
+    transform: rotateX(0deg);
+  }
+
+  header .mobile-search-container .link-search {
+    position: absolute;
+    left: 1.5625rem;
+    opacity: 0.85;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-size: 1.125rem;
+  }
+
+  header .mobile-search-container .cancel-btn {
+    position: absolute;
+    font-size: 0.75rem;
+    color: #fca11f;
+    top: 0.5rem;
+    right: 1.4375rem;
+    cursor: pointer;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  header .mobile-search-container .search-bar {
+    flex: 1;
+  }
+
+  header .mobile-search-container .search-bar.active .cancel-btn {
+    padding: 0 1rem;
+    width: 4.6875rem;
+  }
+
+  /* Nav Move Up for Mobile */
+  header .nav-container nav.move-up {
+    margin-top: -2.1875rem;
+    transition: all 400ms ease;
+  }
+
+  /* Desktop Nav Move Down for Mobile */
+  header nav .desktop-nav.move-down li:first-child {
+    margin-top: 9.375rem;
+  }
+
+  header nav .desktop-nav.move-down li {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Recent Search of Mobile */
+  header .mobile-search-container .search-bar.active .recent-search {
+    top: 5rem;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 500ms ease;
+  }
+
+  header .mobile-search-container .recent-search {
+    position: absolute;
+    top: 0.625rem;
+    left: 0;
+    right: 0;
+    padding: 0 3rem;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  header .mobile-search-container .recent-search ul {
+    list-style: none;
+  }
+
+  header .mobile-search-container .recent-search h2 {
+    color: rgb(200, 200, 200);
+    font-size: 0.75rem;
+  }
+
+  header .mobile-search-container .recent-search ul li a {
+    padding: 1rem 0;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 0.75rem;
+    border-bottom: 1px solid rgb(75, 75, 75, 0.9);
+    width: 100%;
+  }
+
+  header .mobile-search-container .recent-search ul li a:hover {
+    color: #fca11f;
+  }
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

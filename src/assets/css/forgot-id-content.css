@@ -1,0 +1,161 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body {
+    background: rgb(252, 252, 252);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.forgot-id-container {
+    top: 44px;
+    position: relative;
+    width: 100%;
+    margin: 0.5% 0 3% 0;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 {
+    text-align: center;
+}
+
+@media (max-width:1025px) {
+
+    .forgot-id-container .forgot-id-row .forgot-id-form.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-header {
+    display: flex;
+    line-height: 2.8;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-header .forgot-id-title {
+    width: 50%;
+    text-align: left;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-header .forgot-id-title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: rgb(35, 35, 35);
+    padding: 0 3%;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-header .forgot-id-support {
+    width: 50%;
+    text-align: right;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-header .forgot-id-support a {
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    padding: 0 1.2%;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 h2 {
+    color: rgb(35, 35, 35);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2% 0 0 0;
+    padding: 1%;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 h3 {
+    color: rgb(35, 35, 35);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1%;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field {
+    max-width: 35rem;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    border: 3px solid rgb(235, 235, 235);
+    height: 3.4rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 1rem auto;
+    transition: all 0.3s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field:hover {
+    border: 3px solid #f7b75f;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field.active {
+    border: 3px solid #f7b75f;
+    border-radius: 1rem;
+    background-color: rgb(252, 252, 252);
+    transition: all 0.3s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field input {
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    line-height: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    padding: 0 1rem 0 1rem;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field label {
+    position: absolute;
+    font-size: 1rem;
+    line-height: 3;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+    top: 0;
+    left: 1rem;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .input-field.active label {
+    color: #ff8412;
+    font-size: 0.5rem;
+    background: rgb(252, 252, 252);
+    top: -0.75rem;
+    left: 0.5rem;
+    padding: 0 0.8rem;
+    line-height: 1.75;
+    transition: all 0.3s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-btn {
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+    background: #FF9938;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-btn.true:hover {
+    background: #ff8412;
+    transition: all 0.2s ease;
+}
+
+.forgot-id-container .forgot-id-row .forgot-id-form.col-8 .forgot-id-btn.false {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

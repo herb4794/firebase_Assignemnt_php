@@ -1,0 +1,262 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body {
+    background: rgb(252, 252, 252);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.forgot-container {
+    top: 44px;
+    position: relative;
+    width: 100%;
+    margin: 0.5% 0 3% 0;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 {
+    text-align: center;
+}
+
+@media (max-width:1025px) {
+
+    .forgot-container .forgot-row .forgot-form.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-header {
+    display: flex;
+    line-height: 2.8;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-header .forgot-title {
+    width: 50%;
+    text-align: left;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-header .forgot-title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8;
+    color: rgb(35, 35, 35);
+    padding: 0 3%;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-header .forgot-support {
+    width: 50%;
+    text-align: right;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-header .forgot-support a {
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    padding: 0 1.2%;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width:1025px) {
+
+    .forgot-container .forgot-row .forgot-form.col-8 .forgot-content {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main {
+    width: 50%;
+    text-align: left;
+}
+
+@media (max-width:1025px) {
+
+    .forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main {
+        width: 100%;
+    }
+
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main h2 {
+    width: 93%;
+    color: rgb(35, 35, 35);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 5% 0;
+    padding: 1%;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main p {
+    width: 93%;
+    font-size: 1rem;
+    color: rgb(35, 35, 35);
+    line-height: 1;
+    padding: 0 0 0 1%;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main p a {
+    font-size: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    color: #FF9938;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main p a:hover {
+    color: #ff8412;
+    font-weight: 600;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field {
+    max-width: 35rem;
+    width: 93%;
+    background-color: rgb(235, 235, 235);
+    border: 3px solid rgb(235, 235, 235);
+    height: 3.4rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 2rem 0 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:1025px) {
+
+    .forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field {
+        width: 93%;
+    }
+
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field:hover {
+    border: 3px solid #f7b75f;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field.active {
+    border: 3px solid #f7b75f;
+    border-radius: 1rem;
+    background-color: rgb(252, 252, 252);
+    transition: all 0.3s ease;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field input {
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    line-height: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    padding: 0 1rem 0 1rem;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field label {
+    position: absolute;
+    font-size: 1rem;
+    line-height: 3;
+    font-weight: 500;
+    color: rgb(200, 200, 200);
+    top: 0;
+    left: 1rem;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .input-field.active label {
+    color: #ff8412;
+    font-size: 0.5rem;
+    background: rgb(252, 252, 252);
+    top: -0.75rem;
+    left: 0.5rem;
+    padding: 0 0.8rem;
+    line-height: 1.75;
+    transition: all 0.3s ease;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-hints {
+    width: 93%;
+    height: auto;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-hints p {
+    color: rgb(35, 35, 35);
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-hints p a {
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #FF9938;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-btn {
+    font-size: 1rem;
+    color: rgb(252, 252, 252);
+    background: #FF9938;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    transition: all 0.2s ease;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-btn.true:hover {
+    background: #ff8412;
+    transition: all 0.2s ease;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-main .forgot-btn.false {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-reminder {
+    display: flex;
+    width: 50%;
+    margin: 8% auto;
+    padding: 3rem 0.3rem;
+    border-left: 1px solid rgb(200, 200, 200);
+}
+
+@media (max-width:1025px) {
+
+    .forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-reminder {
+        display: none;
+    }
+
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-reminder .forgot-info {
+    background: url('../images/.svg/tools/info-circle_black.svg');
+    display: block;
+    background-position: center;
+    background-size: 3.5rem;
+    height: 3.5rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.forgot-container .forgot-row .forgot-form.col-8 .forgot-content .forgot-content-reminder p {
+    font-size: 0.8rem;
+    color: rgb(135, 135, 135);
+    text-align: left;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

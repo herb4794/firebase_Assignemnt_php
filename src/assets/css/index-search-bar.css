@@ -1,0 +1,258 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.index-search-bar-container {
+  top: 44px;
+  position: relative;
+  width: 100%;
+  margin: 2% 0px;
+}
+
+.index-search-bar-container .index-search-bar-row {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Search Bar Input Field for Index */
+.index-search-bar-container .index-search-bar-row .input-field {
+  max-width: 70vw;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  height: 3.125rem;
+  display: grid;
+  border-radius: 1.4375rem;
+  grid-template-columns: 1% 91% 4% 4%;
+  position: relative;
+  box-shadow: 0 0 3px rgb(200, 200, 200);
+}
+
+@media (max-width:1025px) {
+
+  .index-search-bar-container .index-search-bar-row .input-field.col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    grid-template-columns: 1% 89% 5% 5%;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .index-search-bar-container .index-search-bar-row .input-field.col-8 {
+    grid-template-columns: 1% 85% 7% 7%;
+  }
+
+}
+
+@media (max-width:540px) {
+
+  .index-search-bar-container .index-search-bar-row .input-field.col-8 {
+    grid-template-columns: 1% 79% 10% 10%;
+  }
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Search Bar Input for Index */
+.index-search-bar-container .index-search-bar-row .input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 3.125;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(35, 35, 35);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Search Bar Icon for Index */
+.index-search-bar-container .index-search-bar-row .input-field.col-8 .link-search {
+  background: url('../images/.svg/tools/search-icon_black.svg');
+}
+
+.index-search-bar-container .index-search-bar-row .input-field.col-8 .link-camera {
+  background: url('../images/.svg/tools/camera-icon_black.svg');
+}
+
+.index-search-bar-container .index-search-bar-row .input-field.col-8 .link-search,
+.index-search-bar-container .index-search-bar-row .input-field.col-8 .link-camera {
+  display: block;
+  background-position: center;
+  background-size: 1.25rem;
+  border-radius: 50%;
+  height: 2.375rem;
+  width: 2.375rem;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin: auto;
+}
+
+.index-search-bar-container .index-search-bar-row .input-field.col-8 .link-search:hover {
+  background: url('../images/.svg/tools/search-icon_white.svg');
+  background-color: #FF9938;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.4s ease;
+  background-position: center;
+  background-size: 1.25rem;
+  height: 2.375rem;
+  width: 2.375rem;
+  background-repeat: no-repeat;
+  opacity: 1;
+  cursor: pointer;
+  margin: auto;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*  Recent Search in Search Bar for Index */
+/* No Hide Class */
+.index-search-bar-container .index-search-bar-row .recent-search.container {
+  display: block;
+  width: 60%;
+  background: rgb(252, 252, 252);
+  border-radius: 0 0 0.625rem 0.625rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 300ms;
+  margin: -0.125rem 0 0 0;
+}
+
+@media (max-width:1025px) {
+  .index-search-bar-container .index-search-bar-row .recent-search.container {
+    width: 90%;
+  }
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search h2 {
+  color: rgb(35, 35, 35);
+  width: 100%;
+  font-size: 0.875rem;
+  padding: 0.125rem;
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 320ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul {
+  list-style: none;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(1),
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(2),
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(3),
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(4),
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(5),
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(6) {
+  transform: translateX(0);
+  transition: all 400ms ease;
+  padding: 0.125rem 0.625rem;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(1) {
+  transition-delay: 340ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(2) {
+  transition-delay: 360ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(3) {
+  transition-delay: 380ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(4) {
+  transition-delay: 400ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(5) {
+  transition-delay: 420ms;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li:nth-of-type(6) {
+  text-align: end;
+  transition-delay: 440ms;
+  border-top: 1px solid rgb(200, 200, 200);
+  padding: 0.125rem 0.625rem;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li a {
+  padding: 0.3125rem 0;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(125, 125, 125);
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search ul li a:hover {
+  color: #fca11f;
+}
+
+/* Hide Class */
+.index-search-bar-container .index-search-bar-row .recent-search.container.hide {
+  display: none;
+  width: 60%;
+  background: rgb(252, 252, 252);
+  border-radius: 0 0 0.625rem 0.625rem;
+  transform: translateX(0);
+  transition: all 400ms ease;
+  transition-delay: 300ms;
+  margin: -0.125rem 0 0 0;
+}
+
+.index-search-bar-container .index-search-bar-row .recent-search.container.hide h2, 
+.index-search-bar-container .index-search-bar-row .recent-search.container.hide ul li {
+  transform: translateX(50px);
+  transition: all 400ms ease;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.index-search-bar-container .hot-keywords-row.row {
+  width: 60%;
+  height: 1rem;
+  padding: 0.3125rem 0;
+  position: relative; 
+  margin: 0 9%;
+}
+
+@media (max-width:1025px) {
+
+  .index-search-bar-container .hot-keywords-row.row {    
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (max-width:1025px) {
+
+  .index-search-bar-container .hot-keywords-row .hot-keywords.col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.index-search-bar-container.container-fluid .hot-keywords-row .hot-keywords {
+  font-size: 0.8125rem;
+  color: rgb(125, 125, 125);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.index-search-bar-container .hot-keywords-row .hot-keywords a {
+  font-size: 13px;
+  color: rgb(125, 125, 125);
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0.3125rem;
+}
+
+.index-search-bar-container .hot-keywords-row .hot-keywords a:hover {
+  color: #FF9938;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

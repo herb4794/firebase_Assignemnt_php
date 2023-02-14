@@ -1,0 +1,582 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.shopping-bag-page-container {
+    top: 44px;
+    position: relative;
+    width: 100%;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 {
+    text-align: center;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content {
+    background: rgb(252, 252, 252);
+    border-radius: 1.5rem;
+    width: 100%;
+    margin: 3% 0 1% 0;
+    padding: 0 0 0.5% 0;    
+    box-shadow: 0 0 5px rgb(200, 200, 200, 0.5);
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .shopping-bag-header {
+    display: grid;
+    grid-template-columns: 15% 20% 15% 15% 10% 10% 15%;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+    color: rgb(35, 35, 35);
+    border-bottom: 1px solid rgb(200, 200, 200, 0.5);
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .shopping-bag-header {
+        grid-template-columns: 15% 20% 15% 15% 15% 20%;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .shopping-bag-header .product-description {
+        display: none;
+    }
+
+}
+
+@media (max-width:580px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .shopping-bag-header {
+        display: none;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content {
+        margin: 1% 0;
+        padding: 0.1rem 0;
+        border-radius: 0.8rem;
+    }
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products {
+    position: relative;
+    display: grid;
+    width: 98%;
+    margin: 1% auto;
+    grid-template-columns: 15% 20% 15% 15% 10% 10% 15%;
+    border-radius: 1rem;
+    background: rgb(235, 235, 235, 0.85);
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products {
+        grid-template-columns: 15% 20% 15% 15% 15% 20%;
+    }
+
+}
+
+@media (max-width:580px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products {
+        height: 7.5rem;
+        border-radius: 0.65rem;
+        display: block;
+        text-align: left;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products img {
+    width: 100%;
+    height: auto;
+    max-height: 9rem;
+    max-width: 9rem;
+    border-radius: 0.65rem;
+    margin: 5%;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products span {
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    font-weight: 500;
+    margin: auto 0;
+    text-align: center;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-name {
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    font-weight: 500;
+    margin: auto 0 auto -3%;
+    text-align: center;
+    width: 100%;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-description {
+    font-size: 0.5rem;
+    color: rgb(120, 120, 120);
+    font-weight: 500;
+    margin: auto 0;
+    text-align: left;
+    line-height: 1.6;
+    width: 100%;
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-description {
+        display: none;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .unit-price {
+    text-align: left;
+    position: relative;
+    margin: auto;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .unit-price .product-original-price {
+    font-size: 0.8rem;
+    color: rgb(120, 120, 120);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .unit-price .product-new-price {
+    font-size: 0.9rem;
+    color: rgb(35, 35, 35);
+    font-weight: 700;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group {
+    margin: auto;
+    text-align: center;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group .btn-default {
+    background-color: rgb(220, 220, 220, 0.5);
+    height: 2rem;
+    width: 20%;
+    background-size: 15%;
+    line-height: 1;
+    font-size: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+    height: 1.5rem;
+    padding: 0;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group .btn-default.minus {
+    margin: 0 0 0 auto;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group .btn-default.plus {
+    margin: 0 auto 0 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group .form-control {
+    background: rgb(252, 252, 252);
+    border: none;
+    max-width: 3rem;
+    width: 60%;
+    font-weight: 700;
+    font-size: 0.7rem;
+    height: 1.5rem;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-total-price {
+    width: auto;
+    line-height: 3.5;
+    font-size: 0.9rem;
+    color: #FF9938;
+    font-weight: 700;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-desktop {
+    display: block;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-desktop button {
+    width: 60%;
+    outline: none;
+    border: none;
+    text-align: left;
+    margin: 1% auto;
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    transition: all 0.1s ease;
+    background: none;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-desktop button:hover {
+    color: #FF9938;
+    font-weight: 600;
+    transition: all 0.1s ease;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile {
+    display: none;
+}
+
+@media (max-width:580px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products img {
+        margin: 0.3rem 0 0 0.3rem;
+        border-radius: 0.55rem;
+        width: 100%;
+        height: auto;
+        max-height: 6.8rem;
+        max-width: 6.8rem;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-name {
+        position: absolute;
+        text-align: left;
+        font-size: 1rem;
+        color: rgb(35, 35, 35);
+        font-weight: 700;
+        text-align: left;
+        top: 0.5rem;
+        left: 7.8rem;
+        width: auto;
+        margin: 0;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-description {
+        display: block;
+        position: absolute;
+        margin: 0;
+        top: 2rem;
+        left: 7.8rem;
+        width: 55%;
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+        overflow: hidden;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .unit-price {
+        position: absolute;
+        text-align: left;
+        bottom: 0.3rem;
+        left: 7.8rem;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .input-group {
+        position: absolute;
+        margin: 0;
+        text-align: center;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        width: auto;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-total-price {
+        display: none;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .unit-price .product-new-price {
+        font-size: 1.1rem;
+        color: #FF9938;
+        font-weight: 700;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-desktop {
+        display: none;
+    }
+    
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile {
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile button {
+        border: none;
+        background: none;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile .save-icon {
+        position: absolute;
+        top: 0;
+        right: 1.8rem;
+        background: url('../images/.svg/tools/bookmark-outline_black.svg');
+        display: block;
+        background-position: center;
+        background-size: 1rem;
+        margin: 0 0 0 0;
+        height: 1rem;
+        width: 1rem;
+        background-repeat: no-repeat;
+    }
+         
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile .save-icon:hover {
+        background: url('../images/.svg/tools/bookmark_yellow.svg');
+        display: block;
+        background-position: center;
+        background-size: 1rem;
+        margin: 1px 0 0 0;
+        height: 1rem;
+        width: 1rem;
+        background-repeat: no-repeat;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile .save-icon.saved {
+        background: url('../images/.svg/tools/bookmark_yellow.svg');
+        display: block;
+        background-position: center;
+        background-size: 1rem;
+        margin: 1px 0 0 0;
+        height: 1rem;
+        width: 1rem;
+        background-repeat: no-repeat;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .shopping-bag-page-form.col-8 .shopping-bag-content .products .product-action-mobile button .remove-icon {
+        background: url('../images/.svg/tools/x-icon_black.svg');
+        display: block;
+        background-position: center;
+        background-size: 1rem;
+        height: 1rem;
+        width: 1rem;
+        background-repeat: no-repeat;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar {
+    position: sticky;
+    bottom: -2px;
+    background: rgb(245, 245, 245, 0.85);
+    width: 100%;
+    height: 4rem;
+    z-index: 55;
+    box-shadow: 0 0 5px rgb(200, 200, 200, 0.5);
+    border-bottom: 1px solid rgba(255, 136, 0, 0.75);
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar {
+        height: 7.5rem;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar {
+        height: 10rem;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 {
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: right;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content {
+    display: flex;
+    position: absolute;
+    right: 8rem;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 98%;
+        position: relative;
+        right: 0;
+        border-bottom: 1px solid rgb(220, 220, 220, 0.85);
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content {
+        display: block;
+        width: 98%;
+        position: relative;
+        right: 0;
+        border-bottom: 1px solid rgb(220, 220, 220, 0.85);
+        margin: 0 auto;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products,
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment {
+    display: flex;
+    padding: 0 1%;
+    width: 100%;
+    text-align: right;
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment {
+        margin: 0 auto;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt.total {
+    width: 5rem;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt.pieces {
+    width: 1.8rem;
+    text-align: left;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt.altogether {
+    width: 11rem;
+    text-align: right;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt.currency {
+    width: 1rem;
+    text-align: left;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt.total,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt.altogether {
+        margin: 0.6rem 0 0 auto;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt.pieces {
+        width: 0.5rem;
+    }
+
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt,
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt {
+    line-height: 5.3;
+    font-size: 0.5rem;
+    color: rgb(35, 35, 35);
+    margin: 0 3%;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .item-count,
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .total-price {
+    width: auto;
+    line-height: 3.5;
+    font-size: 1.1rem;
+    color: #FF9938;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt {
+        line-height: 3;
+        margin: 0.6rem 3% 0 0;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .item-count,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .total-price {
+        line-height: 3;
+    }
+}
+
+@media (max-width:767px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .txt,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .txt {
+        line-height: 2.6;
+        margin: 0.6rem 1% 0 0;
+    }
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-products .item-count,
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content.col-8 .calculation-content .total-payment .total-price {
+        line-height: 2.6;
+    }
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content .calculation-btn {
+    position: absolute;
+    right: 0;
+    max-height: 2.5rem;
+    font-size: 0.8rem;
+    color: rgb(252, 252, 252);
+    background: #FF9938;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    margin: 0.8rem 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content .calculation-btn:hover {
+    background: #ff8412;
+    transition: all 0.2s ease;
+}
+
+@media (max-width:1025px) {
+
+    .shopping-bag-page-container .shopping-bag-page-row .calculation-bar .calculation-bar-content .calculation-btn {
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

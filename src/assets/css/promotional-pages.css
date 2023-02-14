@@ -1,0 +1,405 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+body {
+    background: rgb(252, 252, 252);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.promotional-pages-header {
+    top: 44px;
+    position: relative;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.promotional-pages-header .promotional-pages-title {
+    margin: 0 auto 0 9%;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.promotional-pages-header .promotional-pages-hints {
+    margin: 0 auto 0 10%;
+    font-size: 0.8rem;
+}
+
+.promotional-pages-header .promotional-pages-hints a {
+    text-decoration: none;
+    color: rgb(255, 163, 0, 1);
+}
+
+.promotional-pages-header .promotional-pages-hints a:hover {
+    color: rgb(255, 163, 0, 0.8);
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.promotional-content-container {
+    width: 99%;
+    position: relative;
+    top: 44px;
+    margin: 1.5rem 0 1.5rem 0.3rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container {
+    display: block;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+@media (max-width:1025px) {
+
+    .promotional-content-container .promotional-content-row .sidelist-desktop-container {
+        display: none;
+    }
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .sidelist-header {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist {
+    padding: 0 0 0 0.8rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 0.5;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    transition: all 0.2s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist a:hover {
+    margin: 0 0 0 0.5rem;
+    color: rgb(255, 163, 0);
+    transition: all 0.2s ease;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.promotional-content-container .promotional-content-row .sidelist-mobile-container {
+    display: none;
+}
+
+@media (max-width:1025px) {
+
+    .promotional-content-container .promotional-content-row .sidelist-mobile-container {
+        display: block;
+        border-right: 0.8px solid rgb(200, 200, 200);
+    }
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay {
+    position: absolute;
+    background: rgb(252, 252, 252);
+    top: 0;
+    left: 3rem;
+    padding: 1.2rem 5rem 1rem 1rem;
+    margin: -0.6rem 0 0 0;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 3px 0 2px 0px rgb(220, 220, 220, 0.5);
+    z-index: 30;
+    transition: all 0.3s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container {
+    width: 1.5rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0.8rem 0 1.3rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container .menu-icon {
+    position: relative;
+    width: 100%;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container .menu-icon .line-top,
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container .menu-icon .line-bottom {
+    position: absolute;
+    right: 0.625rem;
+    height: 1px;
+    width: 83%;
+    transition: 0.3s;
+    background: rgb(35, 35, 35, 1);
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container .menu-icon .line-top {
+    top: 0rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .menu-icon-container .menu-icon .line-bottom {
+    top: 0.3125rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .menu-icon-container .menu-icon .line-top {
+    top: 0.3125rem;
+    transform: rotateZ(45deg);
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .menu-icon-container .menu-icon .line-bottom {
+    top: 0.3125rem;
+    transform: rotateZ(-45deg);
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .sidelist-mobile-overlay .sidelist-header {
+    position: relative;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    transition: all 0.4s ease;
+    padding: 0.3rem 0.8rem 0 1rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .sidelist-header {
+    writing-mode: horizontal-tb;
+    padding: 0rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .sidelist-mobile-overlay .categories-sidelist {
+    display: none;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist {
+    display: block;
+    padding: 0 0 0 0.8rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 0.5;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    transition: all 0.2s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist a:hover {
+    margin: 0 0 0 0.5rem;
+    color: rgb(255, 163, 0);
+    transition: all 0.2s ease;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .sidelist-header-gac {
+    font-size: 0.8rem;
+    line-height: 0.8;
+    font-weight: 600;
+    padding: 0.8rem 0 0 0;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist-gac {
+    padding: 0 0 0 0.8rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist-gac a {
+    font-size: 0.5rem;
+    font-weight: 500;
+    line-height: 0.5;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    transition: all 0.2s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-desktop-container .categories-sidelist-gac a:hover {
+    margin: 0 0 0 0.5rem;
+    color: rgb(255, 163, 0);
+    transition: all 0.2s ease;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .sidelist-mobile-overlay .sidelist-title {
+    display: block;
+    position: relative;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    transition: all 0.4s ease;
+    padding: 0.3rem 0.8rem 0 1rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .sidelist-title {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .sidelist-mobile-overlay .sidelist-header-gac {
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .sidelist-header-gac {
+    display: block;
+    position: relative;
+    height: auto;
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 600;
+    padding: 0.8rem 0 0 0;
+    transition: all 0.4s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container .sidelist-mobile-overlay .categories-sidelist-gac {
+    display: none;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist-gac {
+    display: block;
+    padding: 0 0 0 0.8rem;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist-gac a {
+    font-size: 0.5rem;
+    font-weight: 500;
+    line-height: 0.5;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    transition: all 0.2s ease;
+}
+
+.promotional-content-container .promotional-content-row .sidelist-mobile-container.active .sidelist-mobile-overlay .categories-sidelist a:hover {
+    margin: 0 0 0 0.5rem;
+    color: rgb(255, 163, 0);
+    transition: all 0.2s ease;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.promotional-content-container .promotional-content-row .promotional-gac-container .immediate-delivery-row .immediate-delivery-container.col-8 {
+    text-align: center;
+    margin: 1% 0;
+}
+
+@media (max-width:1025px) {
+
+    .promotional-content-container .promotional-content-row .promotional-gac-container .immediate-delivery-row .immediate-delivery-container.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .immediate-delivery-row .immediate-delivery-container.col-8 h5 {
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .immediate-delivery-row .immediate-delivery-container.col-8 .immediate-delivery a img {
+    width: 100%;
+    height: auto;
+    max-height: 30%;
+    max-width: 30%;
+    border-radius: 1rem;
+    margin: 1%;
+    box-shadow: 0 0 5px rgb(200, 200, 200);
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .expedited-shipping-row .expedited-shipping-container.col-8 {
+    text-align: center;
+    margin: 1% 0;
+    padding: 2% 0 1% 0;
+    border-top: 2px solid rgb(200, 200, 200, 0.5);
+    border-bottom: 2px solid rgb(200, 200, 200, 0.5);
+}
+
+@media (max-width:1025px) {
+
+    .promotional-content-container .promotional-content-row .promotional-gac-container .expedited-shipping-row .expedited-shipping-container.col-8 {
+        flex: 0 0 97%;
+        max-width: 97%;
+    }
+
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .expedited-shipping-row .expedited-shipping-container.col-8 h5 {
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .expedited-shipping-row .expedited-shipping-container.col-8 .expedited-shipping a img {
+    width: 100%;
+    height: auto;
+    max-height: 14%;
+    max-width: 14%;
+    border-radius: 1rem;
+    margin: 1%;
+    box-shadow: 0 0 5px rgb(200, 200, 200);
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .expedited-shipping-row .expedited-shipping-container.col-8 .promotion-carousel {
+    margin: 2% 0 0 0;
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .giftcard-row .giftcard-container.col-8 {
+    text-align: center;
+    margin: 0.5% 0;
+}
+
+@media (max-width:1025px) {
+
+    .promotional-content-container .promotional-content-row .promotional-gac-container .giftcard-row .giftcard-container.col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .giftcard-row .giftcard-container.col-8 h5 {
+    color: rgb(35, 35, 35);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 3% 0 4% 0;
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .giftcard-row .giftcard-container.col-8 a {
+    position: relative;
+    background: rgb(35, 35, 35);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    line-height: 4;
+    font-weight: 500;
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(35, 35, 35);
+    text-decoration: none;
+    margin: 1%;
+    text-transform: uppercase;
+    white-space: nowrap;    
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .giftcard-row .giftcard-container.col-8 a:hover {
+    position: relative;
+    background: rgb(252, 252, 252);
+    padding: 1rem 1.5rem;
+    min-height: 1rem;
+    font-size: 1rem;
+    line-height: 4;
+    font-weight: 600;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    border: 1px solid rgb(35, 35, 35);
+    text-transform: uppercase;
+    white-space: nowrap;    
+}
+
+.promotional-content-container .promotional-content-row .promotional-gac-container .promotional-products-container .promotional-products-row .title {
+    color: rgb(35, 35, 35);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5%;
+    padding: 1%;
+    border-radius: 1rem;
+    border: 1px solid rgb(200, 200, 200);
+    text-indent: 1rem;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
