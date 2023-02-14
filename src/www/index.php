@@ -1,6 +1,9 @@
 <?php
-require_once ('/var/www/Assignment_1/server/dbcon.php');
+require_once '../../server/dbcon.php';
 // Handling visit requests from 'WebsiteLink'/src/www
+
+$database = new dbcon();
+$result = $database->getData();
 
 if (strpos($_SERVER['REQUEST_URI'], "index.php") === false) {
     header('Location: ' . 'index.php');
@@ -33,6 +36,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") === false) {
 
     // Execution of the Navigation-Bar part
     @include('../assets/includes/navigation-bar.php');
+    
 
     // Execution of the Promotion Carousel part
     @include('../assets/includes/promotion-carousel.php');

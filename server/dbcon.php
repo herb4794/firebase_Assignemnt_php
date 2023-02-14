@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../../config.php';
 class dbcon extends firebase {
 
   public function getData(){

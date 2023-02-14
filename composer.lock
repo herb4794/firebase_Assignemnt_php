@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c666cc51f035dc58eeeecf2d502e3992",
+    "content-hash": "705392bd4be3a83d71d3fcf494d36055",
     "packages": [
         {
             "name": "beste/clock",
@@ -806,16 +806,16 @@
         },
         {
             "name": "kreait/firebase-php",
-            "version": "7.0.0",
+            "version": "7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kreait/firebase-php.git",
-                "reference": "f068f0b98efac46bbaee773b7fdbb30f86874906"
+                "reference": "b67da5afbc43e19f1b69f8b3de4442555bbb1a7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/f068f0b98efac46bbaee773b7fdbb30f86874906",
-                "reference": "f068f0b98efac46bbaee773b7fdbb30f86874906",
+                "url": "https://api.github.com/repos/kreait/firebase-php/zipball/b67da5afbc43e19f1b69f8b3de4442555bbb1a7a",
+                "reference": "b67da5afbc43e19f1b69f8b3de4442555bbb1a7a",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-20T17:00:04+00:00"
+            "time": "2023-02-13T00:54:48+00:00"
         },
         {
             "name": "kreait/firebase-tokens",

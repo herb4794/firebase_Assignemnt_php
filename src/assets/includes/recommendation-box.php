@@ -1,7 +1,9 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <?php
+require_once "../../server/dbcon.php";
+require_once "../assets/includes/product.php";
+$database = new dbcon();
 
-require_once ( '/var/www/Assignment_1//server/dbcon.php');
 if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
 
     echo '
@@ -17,17 +19,13 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
                     <div class="recommendation-box-row row justify-content-around">
     ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+    // @include('../assets/includes/product.php');
+    $result = $database->getData();
+    foreach ($result as $row => $item) {
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+        products_composer("",$item['product_name'],"",$item['product_price']);
+
+    }
 
     echo '
                     </div>

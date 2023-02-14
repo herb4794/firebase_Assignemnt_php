@@ -1,13 +1,5 @@
 {
-    "name": "lawrence/assignment_1",
-    "description": "php_Assignment",
-    "authors": [
-        {
-            "name": "herb",
-            "email": "herb4794@gmail.com"
-        }
-    ],
-    "require": {
-        "kreait/firebase-php": "7.0"
-    }
+  "require": {
+      "kreait/firebase-php": "^7.0"
+  }
 }
