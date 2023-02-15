@@ -7,7 +7,7 @@ require_once "../../server/dbcon.php";
 @include('../assets/includes/add-to-bag-alert.php');
 $products = $database->getData();
 
-function products_composer ($product_image = null,$product_name = null, $product_description = null, $product_price = null){
+function products_composer ($product_discount = null,$product_name = null, $product_price = null){
 
 if (strpos($_SERVER['REQUEST_URI'], ".php") !== false) {
  $product_composer = "
@@ -28,13 +28,13 @@ if (strpos($_SERVER['REQUEST_URI'], ".php") !== false) {
                 <i class=\"save-icon\"></i>
             </div>
 
-            <h5 class=\"product-brand\">$product_image</h5>
+            <h5 class=\"product-brand\"></h5>
             <p class=\"product-introduction\">$product_name</p>
 
             <div class=\"product-price-container\">
                 <div class=\"product-price-row\">
-                    <h5 class=\"product-new-price\">$$product_price</h5>
-                    <h6 class=\"product-original-price\">$20000</h6>
+                    <h5 class=\"product-new-price\">$$product_discount</h5>
+                    <h6 class=\"product-original-price\">$$product_price</h6>
                 </div>
                 <button>
                     <input type=\"hidden\" name=\"product_id\" value=\"productID\"></input>

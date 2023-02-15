@@ -11,10 +11,9 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") === false) {
 
 ?>
 
-
 <?php
 
-// Execution of the HTML5 Default Setting part
+// Execution of the HTML6 Default Setting part
 @include('../assets/includes/html-default.php');
 
 ?>

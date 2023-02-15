@@ -1,6 +1,11 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <?php
+session_start();
+
+if(isset($_SESSION['status'])){
+  echo "<h5>". $_SESSION['status']. "</h5>";
+}
 
 if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
 
@@ -333,6 +338,9 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 </li>
                 <li>
                     <a href="#"><i class="packet-icon"></i>Orders</a>
+                </li>
+                <li>
+                    <a href="insert.php"><i class="packet-icon"></i>insert</a>
                 </li>
             </ul>
         </div>

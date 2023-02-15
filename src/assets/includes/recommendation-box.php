@@ -21,9 +21,9 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
 
     // @include('../assets/includes/product.php');
     $result = $database->getData();
-    foreach ($result as $row => $item) {
+    foreach ($result as $key => $item) {
 
-        products_composer("",$item['product_name'],"",$item['product_price']);
+        products_composer($item['product_discount'],$item['product_name'],$item['product_price']);
 
     }
 
