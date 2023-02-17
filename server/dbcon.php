@@ -1,8 +1,9 @@
 <?php
 require_once '/Applications/MAMP/htdocs/firebase_Assignemnt_php/config.php';
 class dbcon extends firebase {
-
+  
   public function getData(){
+
     $postRef_result = $this->getReference()->getValue();
     return $postRef_result;
   }
@@ -20,7 +21,7 @@ class dbcon extends firebase {
   }
   public function authentication($post_data = null){
     $authentication_result = $this->auth->createUser($post_data);
-    return $authentication_result;
+    return $authentication_result; 
   }
   public function insertData($post_date = null){
     $insertData_result = $this->getReference()->push($post_date);

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../../server/dbcon.php';
 // Handling visit requests from 'WebsiteLink'/src/www
 
