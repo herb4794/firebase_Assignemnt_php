@@ -9,7 +9,7 @@ class firebase {
   private const SERVICEACCOUNT = '/Applications/MAMP/htdocs/firebase_Assignemnt_php/phpassignment-75537-firebase-adminsdk-wf56r-f771d27684.json';
   private const DATABASEURL = 'https://phpassignment-75537-default-rtdb.firebaseio.com/';
   private const TABLE = 'product';
-  protected $auth;
+  public $auth;
   protected $database;
   protected $factory;
   protected $storage;

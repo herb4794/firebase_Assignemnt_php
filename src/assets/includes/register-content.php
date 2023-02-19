@@ -1,7 +1,7 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <?php
 session_start();
-$element = " <div class=\"alert alert-danger\" role=\"alert\">" . $_SESSION['register_status'] ."</div> ";
+$element = " <div class=\"alert alert-success\" role=\"alert\">" . $_SESSION['register_status'] ."</div> ";
 if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
 
     echo '
@@ -24,10 +24,11 @@ if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
              
 
             <h2>Create Your HAVR.mall ID</h2>
+            <p>'."$element".'</p>
             <p>One HAVR.mall ID is all you need to access all HAVR.mall services.</p>
             <p>You already have an HAVR.mall ID ? <a href="../www/forgot.php">Find it here ></a></p>
 
-            <div class="input-field username"> ' ."$element" .'
+            <div class="input-field username">
                 <input id="register-username" name="register_name" type="email" class="input-register-username">
                 <label for="register-username" class="label-register-username">name@example.com</label>
             </div>

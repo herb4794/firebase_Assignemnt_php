@@ -2,7 +2,12 @@
 <?php
 require_once "../../server/dbcon.php";
 require_once "../assets/includes/product.php";
+require_once "../../server/cart.php";
 $database = new dbcon();
+
+if (isset($_POST['add'])) {
+  addToCart();
+}
 
 if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
 
@@ -23,7 +28,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
     $result = $database->getData();
     foreach ($result as $key => $item) {
 
-        products_composer($item['product_discount'],$item['product_name'],$item['product_price']);
+        products_composer($item['product_discount'],$item['product_name'],$item['product_price'], $key);
 
     }
 

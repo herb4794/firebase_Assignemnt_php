@@ -7,12 +7,12 @@ require_once "../../server/dbcon.php";
 @include('../assets/includes/add-to-bag-alert.php');
 $products = $database->getData();
 
-function products_composer ($product_discount = null,$product_name = null, $product_price = null){
+function products_composer ($product_discount = null,$product_name = null, $product_price = null, $product_id){
 
 if (strpos($_SERVER['REQUEST_URI'], ".php") !== false) {
  $product_composer = "
    
-    <form action=\"#\" method=\"post\" class=\"product-card-container col\">
+    <form action=\"/Applications/MAMP/htdocs/firebase_Assignemnt_php/server/cart.php\" method=\"post\" class=\"product-card-container col\">
     <a herf=\"#\">
 
         <div class=\"product-image-container\">
@@ -36,8 +36,8 @@ if (strpos($_SERVER['REQUEST_URI'], ".php") !== false) {
                     <h5 class=\"product-new-price\">$$product_discount</h5>
                     <h6 class=\"product-original-price\">$$product_price</h6>
                 </div>
-                <button>
-                    <input type=\"hidden\" name=\"product_id\" value=\"productID\"></input>
+                <button type=\"submit\" name=\"add\">
+                    <input type=\"hidden\" name=\"product_id\" value=\"$product_id\"></input>
                     <i class=\"bag-btn\"></i>
                     <i class=\"plus-icon\"></i>
                 </button>

@@ -31,6 +31,15 @@ class dbcon extends firebase {
     $childData_result = $this->getReference()->getChild($post_date)->getValue();
     return $childData_result;
   }
+  public function verify($email = null, $pass = null) {
+    $verify_result = $this->auth->signInWithEmailAndPassword($email, $pass);
+    return $verify_result;
+  }
+
+  public function getkey($postData = null){
+    $getKey_result = $this->getReference()->getKey();
+    return $getKey_result;
+  }
 }
 
 ?>
