@@ -1,9 +1,8 @@
 <?php
-require_once '/Applications/MAMP/htdocs/firebase_Assignemnt_php/config.php';
+require_once '/xampp/htdocs/Assignment_2/config.php';
 class dbcon extends firebase {
-  
-  public function getData(){
 
+  public function getData(){
     $postRef_result = $this->getReference()->getValue();
     return $postRef_result;
   }
@@ -15,7 +14,7 @@ class dbcon extends firebase {
     $update_result = $this->getReference()->update($post_data);
     return $update_result;
   }
-  public function delete(){
+  public function deleteData(){
     $delete_result = $this->getReference()->remove();
     return $delete_result;
   }
@@ -31,15 +30,31 @@ class dbcon extends firebase {
     $childData_result = $this->getReference()->getChild($post_date)->getValue();
     return $childData_result;
   }
-  public function verify($email = null, $pass = null) {
+  public function verify($email = null, $pass = null){
     $verify_result = $this->auth->signInWithEmailAndPassword($email, $pass);
     return $verify_result;
   }
-
-  public function getkey($postData = null){
-    $getKey_result = $this->getReference()->getKey();
-    return $getKey_result;
+  public function getUserData(){
+    $getUserData_result = $this->auth->listUsers();
+    return $getUserData_result;
   }
+  public function editUserData($uid = null){
+    $getEditUserData = $this->auth->getUser($uid);
+    return $getEditUserData;
+  }
+  public function updateUser($uid = null, $post_date = null){
+    $getUpdateUser = $this->auth->updateUser($uid, $post_date);
+    return $getUpdateUser;
+  }
+  public function deleteUser($uid = null){
+    $getDeleteUser = $this->auth->deleteUser($uid);
+    return $getDeleteUser;
+  }
+  public function updateProduct($post_data = null){
+    $getUpdateProduct = $this->getReference()->update($post_data);
+    return $getUpdateProduct;
+  }
+
 }
 
 ?>

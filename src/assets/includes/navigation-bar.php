@@ -1,15 +1,86 @@
-<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
 <?php
-session_start();
 
-if(isset($_SESSION['status'])){
-  echo "<h5>". $_SESSION['status']. "</h5>";
+function logoutTag (){
+  if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {    
+    if (strpos($_SERVER['REQUEST_URI'], "-tc.php") != false) {   
+        $element =     
+        "
+        <li>
+            <a href=\"../../server/logout.php\"><i class=\"packet-icon\"></i>登出</a>
+        </li>
+        ";
+    } else {
+        $element =
+        "
+        <li>
+            <a href=\"../../server/logout.php\"><i class=\"packet-icon\"></i>logout</a>
+        </li>
+        ";
+    }
+  }
+
+  return $element ;
+} 
+
+function dispalyName (){
+  if (isset($_SESSION['user_name']) && $_SESSION['login_status'] == true && $_SESSION['login_status'] != false) {
+    $userName = $_SESSION['user_name'];
+  }
+
+  return $userName;
 }
 
+function insertData(){
+  if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+    if (strpos($_SERVER['REQUEST_URI'], "-tc.php") != false) {   
+        $element =     
+        "
+        <li>            
+            <a href=\"../../adminstrator/min/insert.php\"><i class=\"packet-icon\"></i>控制頁面</a>
+        </li>
+        ";
+    } else {
+        $element =
+        "
+        <li>
+            <a href=\"../../adminstrator/min/insert.php\"><i class=\"packet-icon\"></i>Panel</a>
+        </li>
+        ";
+    }
+  }
+
+  return $element;
+}
+
+function bag(){
+  if (isset($_SESSION['cart'])) {
+    $count = count($_SESSION['cart']);
+    $element = "<h2>$count product in you cart</h2>";
+    return $element;
+   }else{
+     $element = "<h2>You Bag is Empty</h2>";
+     return $element;
+  }
+}
+
+$logiutTag = logoutTag();
+$userName = dispalyName();
+$insert = insertData();
+$bag = bag();
+
+function total () {
+  if(isset($_SESSION['cart'])){
+    $count = 0;
+    $count = count($_SESSION['cart']);
+    return $count;
+  }else{
+    return $count = 0;
+  }
+}
+$countTotal = total();
 if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
 
-    echo '
+  echo '
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!-- Header of Navigation-Bar -->
 <header>
@@ -21,9 +92,15 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
             <!-- Navigation Menu Items of Mobile -->
             <ul class="mobile-nav">
                 <li>
-                    <a href="#" class="link-bag">
-                        <p>9+</p>
-                    </a>
+                    <a href="#" class="link-bag">';
+                        if ($countTotal > 0) {
+                            if ($countTotal <= 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'</p>';
+                            } else if ($countTotal > 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'+</p>';
+                            }
+                        }
+        echo        '</a>
                 </li>
                 <li>
                     <a href="../www/index-tc.php">
@@ -56,17 +133,39 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li><a href="../www/support-tc.php" class="">支援服務</a></li>
                 <li><a class="link-search"></a></li>
                 <li>
-                    <a class="link-bag">
-                        <p>9+</p>
-                    </a>
+                    <a class="link-bag">';
+                    if ($countTotal > 0) {
+                        if ($countTotal <= 9) {
+                            echo '<p class="bag-alert">'."$countTotal".'</p>';
+                        } else if ($countTotal > 9) {
+                            echo '<p class="bag-alert">'."$countTotal".'+</p>';
+                        }
+                    }
+    echo            '</a>
                 </li>
+                
                 <li class="desktop-login">
-                    <a href="../www/login-tc.php" class="link-user"></a>
-                </li>
-
-                <!-- This Login Option Is Only Available In The Mobile Version -->
-                <li class="mobile-login"><a href="../www/login-tc.php" class=""><i class="link-user"></i>登入</a>
-                </li>
+                <a href="../www/login-tc.php" class="link-user">';
+                if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+                    $cleanedUserName = str_replace('@gmail.com', '', $userName);
+                    echo '<span>'."$cleanedUserName".'</span>';
+                } else {
+        
+                }
+                echo '</a>
+                        </li>
+        
+                        <!-- This Login Option Is Only Available In The Mobile Version -->
+                        <li class="mobile-login"><a href="../www/login-tc.php" class=""><i class="link-user"></i>';
+        
+                if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+                    $cleanedUserName = str_replace('@gmail.com', '', $userName);
+                    echo '<span>'."$cleanedUserName".'</span>';
+                } else {
+                    echo '登入';
+                }      
+                        
+                echo '</li>
 
             </ul>
         </nav>
@@ -147,7 +246,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
     <!-- Desktop Shopping-Bag Container -->
     <div class="shopping-bag-view hide">
         <div class="shopping-bag-container">
-            <h2>您的購物袋是空的</h2>
+        '."$bag".'
             <ul>
                 <li>
                     <a href="../www/shopping-bag-tc.php"><i class="bag-icon"></i>購物袋</a>
@@ -158,6 +257,8 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li>
                     <a href="#"><i class="packet-icon"></i>訂單</a>
                 </li>
+                '."$insert".'
+                '."$logiutTag".'
             </ul>
         </div>
     </div>
@@ -166,7 +267,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
     <!-- Mobile Shopping-Bag Container -->
     <div class="mobile-shopping-bag-view hide">
         <div class="mobile-shopping-bag-container">
-            <h2>您的購物袋是空的</h2>
+        '."$bag".'
             <ul>
                 <li>
                     <a href="../www/shopping-bag-tc.php"><i class="bag-icon"></i>購物袋</a>
@@ -177,6 +278,8 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li>
                     <a href="#"><i class="packet-icon"></i>訂單</a>
                 </li>
+                '."$insert".'
+                '."$logiutTag".'
             </ul>
         </div>
     </div>
@@ -190,7 +293,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
 
 } else {
 
-    echo '
+  echo '
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!-- Header of Navigation-Bar -->
 <header>
@@ -202,9 +305,15 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
             <!-- Navigation Menu Items of Mobile -->
             <ul class="mobile-nav">
                 <li>
-                    <a href="#" class="link-bag">
-                        <p>9+</p>
-                    </a>
+                    <a href="#" class="link-bag">';
+                        if ($countTotal > 0) {
+                            if ($countTotal <= 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'</p>';
+                            } else if ($countTotal > 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'+</p>';
+                            }
+                        }
+        echo        '</a>
                 </li>
                 <li>
                     <a href="../www/index.php">
@@ -237,18 +346,38 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li><a href="../www/support.php" class="">Support</a></li>
                 <li><a class="link-search"></a></li>
                 <li>
-                    <a class="link-bag">
-                        <p>9+</p>
-                    </a>
+                    <a class="link-bag">';
+                        if ($countTotal > 0) {
+                            if ($countTotal <= 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'</p>';
+                            } else if ($countTotal > 9) {
+                                echo '<p class="bag-alert">'."$countTotal".'+</p>';
+                            }
+                        }
+        echo        '</a>
                 </li>
                 <li class="desktop-login">
-                    <a href="../www/login.php" class="link-user"></a>
+                    <a href="../www/login.php" class="link-user">';
+        if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+            $cleanedUserName = str_replace('@gmail.com', '', $userName);
+            echo '<span>'."$cleanedUserName".'</span>';
+        } else {
+
+        }
+        echo '</a>
                 </li>
 
                 <!-- This Login Option Is Only Available In The Mobile Version -->
-                <li class="mobile-login"><a href="../www/login.php" class=""><i class="link-user"></i>Sign in</a>
-                </li>
+                <li class="mobile-login"><a href="../www/login.php" class=""><i class="link-user"></i>';
 
+        if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+            $cleanedUserName = str_replace('@gmail.com', '', $userName);
+            echo '<span>'."$cleanedUserName".'</span>';
+        } else {
+            echo 'Sign in';
+        }      
+                
+        echo '</li>
             </ul>
         </nav>
         <!-- End of Navigation Menu Items -->
@@ -328,7 +457,8 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
     <!-- Desktop Shopping-Bag Container -->
     <div class="shopping-bag-view hide">
         <div class="shopping-bag-container">
-            <h2>You Bag is Empty</h2>
+
+            '."$bag".'
             <ul>
                 <li>
                     <a href="../www/shopping-bag.php"><i class="bag-icon"></i>Bag</a>
@@ -339,9 +469,8 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li>
                     <a href="#"><i class="packet-icon"></i>Orders</a>
                 </li>
-                <li>
-                    <a href="insert.php"><i class="packet-icon"></i>insert</a>
-                </li>
+                '."$insert".'
+                '."$logiutTag".'
             </ul>
         </div>
     </div>
@@ -350,7 +479,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
     <!-- Mobile Shopping-Bag Container -->
     <div class="mobile-shopping-bag-view hide">
         <div class="mobile-shopping-bag-container">
-            <h2>You Bag is Empty</h2>
+            '."$bag".'
             <ul>
                 <li>
                     <a href="../www/shopping-bag.php"><i class="bag-icon"></i>Bag</a>
@@ -361,6 +490,8 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                 <li>
                     <a href="#"><i class="packet-icon"></i>Orders</a>
                 </li>
+                '."$insert".'
+                '."$logiutTag".'
             </ul>
         </div>
     </div>
@@ -372,6 +503,3 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 ';
 }
-
-?>
-<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->

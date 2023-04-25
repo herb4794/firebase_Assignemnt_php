@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 // Execution of the HTML5 Default Setting part
 @include('../assets/includes/html-default.php');
 

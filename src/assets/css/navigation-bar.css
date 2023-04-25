@@ -41,6 +41,11 @@ header .link-user {
   background-repeat: no-repeat;
 }
 
+header .link-user span{
+  margin-left: 25px;
+  line-height: 44px;
+}
+
 /* Image of Close Icon */
 header .link-close {
   background: url('../images/.svg/tools/close-icon_white.svg');

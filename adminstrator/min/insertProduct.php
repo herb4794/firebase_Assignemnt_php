@@ -5,7 +5,7 @@
         <div class="card-header">
          <h4>
             Add Contacts
-            <a href="index.php" class="btn btn-danger float-end">BACK</a>
+            <a href="dashboard.php" class="btn btn-danger float-end">BACK</a>
          </h4> 
         </div>
         <div class="card-body">
@@ -23,6 +23,10 @@
             <div class="form-group mb-3">
               <label for="">Product Price</label>
               <input type="text" name="product_price" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="">Product Image</label>
+              <input type="text" name="product_image" class="form-control">
             </div>
 
             <div class="form-group mb-3">

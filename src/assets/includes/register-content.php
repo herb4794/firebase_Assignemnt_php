@@ -8,7 +8,7 @@ if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="register-container container-fluid">
     <div class="register-row row justify-content-center">
-        <form action="../../../server/register.php" class="register-form col-8" method="POST">
+        <form action="../../server/register.php" class="register-form col-8" method="POST">
 
             <div class="register-header">
                 <div class="register-title">
@@ -24,7 +24,6 @@ if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
              
 
             <h2>Create Your HAVR.mall ID</h2>
-            <p>'."$element".'</p>
             <p>One HAVR.mall ID is all you need to access all HAVR.mall services.</p>
             <p>You already have an HAVR.mall ID ? <a href="../www/forgot.php">Find it here ></a></p>
 
@@ -52,7 +51,7 @@ if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
                 <label for="register-phone" class="label-register-phone">Phone Number</label>
             </div>
       
-            <input name="user_type" type="hidden" value="user">
+            <input name="user_type" type="hidden" value="admin">
 
             <div class="register-hints">
                 <p>Make sure you enter a phone number you can always access. It will be used to verify your identity any time you sign in on a new device or web browser. Messaging or data rates may apply.</p>
@@ -137,6 +136,8 @@ if (strpos($_SERVER['REQUEST_URI'], "register.php") !== false) {
                 href="#">隱私政策</a> 和 <a href="#">Cookie 政策</a>。您可能會收到我們的短信通知，並可以隨時選擇退出。</p>
 
             <input type="submit" name="register" value="註冊" class="register-btn" />
+
+            <input name="user_type" type="hidden" value="admin">
 
             <p class="social-text">或透過社交平台帳號註冊</p>
 

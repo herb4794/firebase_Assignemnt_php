@@ -2,12 +2,7 @@
 <?php
 require_once "../../server/dbcon.php";
 require_once "../assets/includes/product.php";
-require_once "../../server/cart.php";
 $database = new dbcon();
-
-if (isset($_POST['add'])) {
-  addToCart();
-}
 
 if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
 
@@ -27,8 +22,19 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
     // @include('../assets/includes/product.php');
     $result = $database->getData();
     foreach ($result as $key => $item) {
-
-        products_composer($item['product_discount'],$item['product_name'],$item['product_price'], $key);
+        products_composer(
+            $key, 
+            $item['product_discount'], 
+            $item['product_en_brand'], 
+            $item['product_en_description'], 
+            $item['product_en_name'], 
+            $item['product_image'], 
+            $item['product_price'], 
+            $item['product_tc_brand'], 
+            $item['product_tc_description'], 
+            $item['product_tc_name'], 
+            $item['product_type'] 
+          );
 
     }
 
@@ -56,17 +62,22 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
                     <div class="recommendation-box-row row justify-content-around">
     ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-require_once
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+    $result = $database->getData();
+    foreach ($result as $key => $item) {
+        products_composer(
+            $key, 
+            $item['product_discount'], 
+            $item['product_en_brand'], 
+            $item['product_en_description'], 
+            $item['product_en_name'], 
+            $item['product_image'], 
+            $item['product_price'], 
+            $item['product_tc_brand'], 
+            $item['product_tc_description'], 
+            $item['product_tc_name'], 
+            $item['product_type'] 
+          );
+    }
 
     echo '
                     </div>

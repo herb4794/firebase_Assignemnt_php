@@ -1,13 +1,20 @@
 <?php
 
+session_start();
 // Execution of the HTML5 Default Setting part
 @include('../assets/includes/html-default.php');
+
+if (isset($_SESSION['login_status']) == true && $_SESSION['login_status'] != false) {
+ header('Location: index.php') ;
+}
+
+
 ?>
 
 <head>
     <?php
 
-    // Execution of the Title part
+    // Execution of the Title part 
     @include('../assets/includes/title.php');
 
     // Execution of the Header part
@@ -32,5 +39,11 @@
     @include('../assets/includes/script.php');
 
     ?>
+    <script type="module">     
+
+
+    </script>
 </body>
+
+
 </html>

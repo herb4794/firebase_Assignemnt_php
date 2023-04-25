@@ -30,7 +30,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     <script src="../assets/js/index-category-box.js?v=1"></script>
     
     <!-- JavaScript of Product Card for Index -->
-    <script src="../assets/js/product-card.js?v=1"></script>
+    <script src="../assets/js/product-card.js?v=3"></script>
 
     ';
 
@@ -42,7 +42,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     <script src="../assets/js/promotional-pages.js?v=1"></script>
 
     <!-- JavaScript of Product Card for Index -->
-    <script src="../assets/js/product-card.js?v=1"></script>
+    <script src="../assets/js/product-card.js?v=3"></script>
 
     ';
 
@@ -54,7 +54,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     <script src="../assets/js/promotional-pages.js?v=1"></script>
 
     <!-- JavaScript of Product Card for Index -->
-    <script src="../assets/js/product-card.js?v=1"></script>
+    <script src="../assets/js/product-card.js?v=3"></script>
 
     ';
 
@@ -66,7 +66,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     <script src="../assets/js/promotional-pages.js?v=1"></script>
 
     <!-- JavaScript of Product Card for Index -->
-    <script src="../assets/js/product-card.js?v=1"></script>
+    <script src="../assets/js/product-card.js?v=3"></script>
 
     ';
     
@@ -78,7 +78,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     <script src="../assets/js/promotional-pages.js?v=1"></script>
     
     <!-- JavaScript of Product Card for Index -->
-    <script src="../assets/js/product-card.js?v=1"></script>
+    <script src="../assets/js/product-card.js?v=3"></script>
     
     ';
 
@@ -89,7 +89,7 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false || strpos($_SERVER['R
     echo '
                 
     <!-- JavaScript of Promotional Pages -->
-    <script src="../assets/js/login-content.js?v=1"></script>
+    <script type="module" src="../assets/js/login-content.js?v=9"></script>
     
     ';
 

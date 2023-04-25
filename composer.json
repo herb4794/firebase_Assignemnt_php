@@ -1,5 +1,5 @@
 {
-  "require": {
-      "kreait/firebase-php": "^7.0"
-  }
+    "require": {
+        "kreait/firebase-php": "^7.1"
+    }
 }

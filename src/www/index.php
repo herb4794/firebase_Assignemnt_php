@@ -2,13 +2,16 @@
 session_start();
 require_once '../../server/dbcon.php';
 // Handling visit requests from 'WebsiteLink'/src/www
+// require_once '../../server/cart.php';
 
 $database = new dbcon();
-$result = $database->getData();
+$result = $database->getUserData();
+
 
 if (strpos($_SERVER['REQUEST_URI'], "index.php") === false) {
     header('Location: ' . 'index.php');
 }
+
 
 ?>
 

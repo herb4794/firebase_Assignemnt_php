@@ -218,6 +218,7 @@ body {
     border: 1px solid rgb(75, 75, 75);
     text-decoration: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .login-container .login-row .login-form.col-8 .social-media .social-icon-facebook:hover,

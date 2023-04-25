@@ -1,1 +1,6 @@
 /vendor/
+src/assets/images/products
+
+*.DS_Store
+
+node_modules/

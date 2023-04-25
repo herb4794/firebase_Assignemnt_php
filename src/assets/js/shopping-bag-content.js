@@ -5,3 +5,23 @@ document.querySelectorAll('.shopping-bag-page-container .shopping-bag-page-row .
 }));
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// const productPlus = document.getElementById('product-plus');
+// const productForm = document.getElementById('productCartForm');
+
+// productPlus.addEventListener('submit', async (e) => { 
+//   e.preventDefault();
+//   const formData = new FormData(cartFrom)
+
+//   formData.append('addToCart',1)
+//   formData.append('qty', 1)
+
+//   await fetch('../www/shopping-bag.php', {
+//     method: "POST",
+//     body: formData,
+//   }).then(response => {
+//     localStorage.setItem("qty", JSON.stringify(response))
+//     console.log(response);
+//   })
+  
+//  })

@@ -1,5 +1,12 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <?php
+
+require_once "../../server/dbcon.php";
+require_once "../assets/includes/product.php";
+$database = new dbcon();
+
+$result = $database->getData();
+
 if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
 
   if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
@@ -119,29 +126,25 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+   foreach ($result as $key => $item) {
+     products_composer(
+      $key, 
+      $item['product_discount'], 
+      $item['product_en_brand'], 
+      $item['product_en_description'], 
+      $item['product_en_name'], 
+      $item['product_image'], 
+      $item['product_price'], 
+      $item['product_tc_brand'], 
+      $item['product_tc_description'], 
+      $item['product_tc_name'], 
+      $item['product_type'] 
+    );
+   
+ }
+    
+   
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
 
     echo '
           </div>
@@ -272,29 +275,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+   foreach ($result as $key => $item) {
+    products_composer(
+      $key, 
+      $item['product_discount'], 
+      $item['product_en_brand'], 
+      $item['product_en_description'], 
+      $item['product_en_name'], 
+      $item['product_image'], 
+      $item['product_price'], 
+      $item['product_tc_brand'], 
+      $item['product_tc_description'], 
+      $item['product_tc_name'], 
+      $item['product_type'] 
+    );
+   
+ }
 
     echo '
           </div>
@@ -428,29 +424,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+   foreach ($result as $key => $item) {
+    products_composer(
+      $key, 
+      $item['product_discount'], 
+      $item['product_en_brand'], 
+      $item['product_en_description'], 
+      $item['product_en_name'], 
+      $item['product_image'], 
+      $item['product_price'], 
+      $item['product_tc_brand'], 
+      $item['product_tc_description'], 
+      $item['product_tc_name'], 
+      $item['product_type'] 
+    );
+   
+ }
 
     echo '
           </div>
@@ -582,29 +571,23 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+ 
+   foreach ($result as $key => $item) {
+    products_composer(
+      $key, 
+      $item['product_discount'], 
+      $item['product_en_brand'], 
+      $item['product_en_description'], 
+      $item['product_en_name'], 
+      $item['product_image'], 
+      $item['product_price'], 
+      $item['product_tc_brand'], 
+      $item['product_tc_description'], 
+      $item['product_tc_name'], 
+      $item['product_type'] 
+    );
+   
+ }
 
     echo '
           </div>
@@ -738,31 +721,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    echo '
+   foreach ($result as $key => $item) {
+    products_composer(
+      $key, 
+      $item['product_discount'], 
+      $item['product_en_brand'], 
+      $item['product_en_description'], 
+      $item['product_en_name'], 
+      $item['product_image'], 
+      $item['product_price'], 
+      $item['product_tc_brand'], 
+      $item['product_tc_description'], 
+      $item['product_tc_name'], 
+      $item['product_type'] 
+    );
+   
+ }    echo '
           </div>
         </div>
 
@@ -890,29 +864,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
           <div class="promotional-products-row row justify-content-around">
       ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+    foreach ($result as $key => $item) {
+      products_composer(
+        $key, 
+        $item['product_discount'], 
+        $item['product_en_brand'], 
+        $item['product_en_description'], 
+        $item['product_en_name'], 
+        $item['product_image'], 
+        $item['product_price'], 
+        $item['product_tc_brand'], 
+        $item['product_tc_description'], 
+        $item['product_tc_name'], 
+        $item['product_type'] 
+      );
+   
+ } 
 
     echo '
           </div>
@@ -1183,17 +1150,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
               <h5 class="title">更多禮品卡或優惠卷商品</h5>
     ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
+    foreach ($result as $key => $item) {
+      gifts_products_composer(
+        $key, 
+        $item['product_discount'], 
+        $item['product_en_brand'], 
+        $item['product_en_description'], 
+        $item['product_en_name'], 
+        $item['product_image'], 
+        $item['product_price'], 
+        $item['product_tc_brand'], 
+        $item['product_tc_description'], 
+        $item['product_tc_name'], 
+        $item['product_type'] 
+      );
+   
+ } 
 
     echo '
             </div>
@@ -1455,19 +1427,22 @@ if (strpos($_SERVER['REQUEST_URI'], "best-sellers") !== false) {
               <h5 class="title">More Gift Card or Coupon items</h5>
     ';
 
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-    @include('../assets/includes/product.php');
-
-    echo '
+    foreach ($result as $key => $item) {
+      gifts_products_composer(
+        $key, 
+        $item['product_discount'], 
+        $item['product_en_brand'], 
+        $item['product_en_description'], 
+        $item['product_en_name'], 
+        $item['product_image'], 
+        $item['product_price'], 
+        $item['product_tc_brand'], 
+        $item['product_tc_description'], 
+        $item['product_tc_name'], 
+        $item['product_type'] 
+      );
+   
+ }     echo '
             </div>
           </div>
         </div>

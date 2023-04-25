@@ -1049,7 +1049,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
         <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         ';
 
-    } else if (strpos($_SERVER['REQUEST_URI'], "todays-deal.php") !== false) {
+    } else if (strpos($_SERVER['REQUEST_URI'], "todays-deals.php") !== false) {
 
         echo '
             <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->        <!-- Under Footer -->
@@ -1066,7 +1066,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                         </div>
         
                         <div class="language-conversion">
-                            <a href="../www/todays-deal-tc.php">English</a>
+                            <a href="../www/todays-deals-tc.php">English</a>
                             <a href="#">Hong Kong</a>
                         </div>
         
@@ -1077,7 +1077,7 @@ if (strpos($_SERVER['REQUEST_URI'], "-tc.php") !== false) {
                     <div class="under-footer-mobile col-8">
         
                         <div class="language-conversion">
-                            <a href="../www/todays-deal-tc.php">English</a>
+                            <a href="../www/todays-deals-tc.php">English</a>
                             <a href="#">Hong Kong</a>
                         </div>
         

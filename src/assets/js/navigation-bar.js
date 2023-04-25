@@ -6,6 +6,7 @@ const desktopNav = document.querySelector(".desktop-nav");
 const searchContainer = document.querySelector(".search-container");
 const overlay = document.querySelector(".search-container-overlay");
 const shoppingBagBtn = document.querySelector("nav .desktop-nav .link-bag");
+const shoppingBagAlertBtn = document.querySelector("nav .desktop-nav .link-bag .bag-alert");
 const shoppingBagContainer = document.querySelector(".shopping-bag-view");
 
 
@@ -67,6 +68,7 @@ const nav = document.querySelector(".nav-container nav");
 const searchInput = document.querySelector(".mobile-search-container input");
 const cancelBtn = document.querySelector(".mobile-search-container .cancel-btn");
 const mobileShoppingBagBtn = document.querySelector("nav .mobile-nav .link-bag");
+const mobileShoppingBagAlertBtn = document.querySelector("nav .mobile-nav .link-bag .bag-alert");
 const mobileShoppingBagContainer = document.querySelector(".mobile-shopping-bag-view.hide");
 
 menuIconContainer.addEventListener("click", () => {

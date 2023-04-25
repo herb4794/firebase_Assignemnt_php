@@ -1,5 +1,10 @@
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <?php
+require_once '../../server/dbcon.php';
+$database = new dbcon('index_category_box_banner');
+$result = $database->getData();
+$resultBanneren= array($result['en']['banner_1_url'],$result['en']['banner_2_url'],$result['en']['banner_3_url'],$result['en']['banner_4_url'],$result['en']['banner_5_url']);
+$resultBannerzh = array($result['zh']['banner_1_url'],$result['zh']['banner_2_url'],$result['zh']['banner_3_url'],$result['zh']['banner_4_url'],$result['zh']['banner_5_url']);
 
 if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
 
@@ -67,19 +72,19 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_1.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBanneren[0]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_2.jpeg" class="d-block w-100" alt="#">
+                            <img src='."$resultBanneren[1]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_3.jpeg" class="d-block w-100" alt="#">
+                            <img src='."$resultBanneren[2]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_4.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBanneren[3]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_5.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBanneren[4]".' class="d-block w-100" alt="#">
                         </div>
                     </div>
                 </div>
@@ -158,19 +163,19 @@ if (strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_1.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBannerzh[0]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_2.jpeg" class="d-block w-100" alt="#">
+                            <img src='."$resultBannerzh[1]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_3.jpeg" class="d-block w-100" alt="#">
+                            <img src='."$resultBannerzh[2]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_4.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBannerzh[3]".' class="d-block w-100" alt="#">
                         </div>
                         <div class="carousel-item">
-                            <img src="../assets/images/promotion-banner/category-box/bannerzh_5.jpg" class="d-block w-100" alt="#">
+                            <img src='."$resultBannerzh[4]".' class="d-block w-100" alt="#">
                         </div>
                     </div>
                 </div>
